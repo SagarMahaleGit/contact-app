@@ -26,7 +26,7 @@ function App() {
 
   const handleDeleteContact = (id) => {
     const updatedContactList = contactList.filter(
-      (contact) => contact.id != id
+      (contact) => contact.id !== id
     );
     setContactList(updatedContactList);
   };

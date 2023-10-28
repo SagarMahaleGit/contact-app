@@ -4,7 +4,7 @@ import userImage from "../images/userImage.png";
 
 const ContactDetails = (props) => {
   const { id } = useParams();
-  const contact = props.contactList.filter((contact) => contact.id == id)[0];
+  const contact = props.contactList.filter((contact) => contact.id === id)[0];
 
   return (
     <div
@@ -15,7 +15,7 @@ const ContactDetails = (props) => {
     >
       <div className="ui card centered">
         <div className="image">
-          <img src={userImage} alt="user" />
+          <img src={userImage} alt="A picture of a user" />
         </div>
         <div className="content">
           <div className="header">{contact.name}</div>

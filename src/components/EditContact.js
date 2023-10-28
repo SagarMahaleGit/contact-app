@@ -3,7 +3,7 @@ import { useNavigate, useParams } from "react-router-dom";
 
 const EditContact = (props) => {
   const { id } = useParams();
-  const contact = props.contactList.filter((contact) => contact.id == id)[0];
+  const contact = props.contactList.filter((contact) => contact.id === id)[0];
 
   const navigate = useNavigate();
   const [state, setState] = useState({
