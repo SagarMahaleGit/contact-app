@@ -8,7 +8,7 @@ const CardContact = (props) => {
 
   return (
     <div className="item">
-      <img className="ui avatar image" src={user} alt="A picture of user" />
+      <img className="ui avatar image" src={user} alt="User" />
       <div className="content">
         <div className="header">{props.contact.name}</div>
         <Link
