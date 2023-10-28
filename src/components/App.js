@@ -33,7 +33,7 @@ function App() {
 
   useEffect(() => {
     if (!initialContactList) setContactList(demoData);
-  }, []);
+  }, [initialContactList]);
 
   useEffect(() => {
     localStorage.setItem(contactItems, JSON.stringify(contactList));
