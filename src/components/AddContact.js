@@ -27,7 +27,7 @@ const AddContact = (props) => {
         navigate("/");
       }
     } else {
-      alert("Please fill all the details.");
+      alert("Please fill all the details...");
     }
   };
 
